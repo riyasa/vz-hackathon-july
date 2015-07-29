@@ -1,3 +1,2 @@
 language: java
-script: ant build-war
-script: hostname
+install: ant build-war
