@@ -1,2 +1,6 @@
 language: java
 script: ant build-war
+install: pwd
+install: cd /home/travis/build/nattanagaraju/vz-hackathon-july
+install: ls -ltr
+install: jar -xvf vz-hackathon-july.war
