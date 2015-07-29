@@ -1,0 +1,4 @@
+---
+applications:
+- name: vz-hackathon-july
+path: /home/travis/build/nattanagaraju/vz-hackathon-july/vz-hackathon-july.war
