@@ -1,8 +1,19 @@
 <?xml version="1.0"?>
    <project name="Hello World Project" default="test">
    
-   <target name="test">
+   <target name="test" depends="build-war">
       <echo>Hello World - Welcome to Apache Ant!</echo>
    </target>
+   	
+   	<target name="build-war">
+
+   	   <war destfile="fax.war" webxml="${basedir}/web.xml">
+   	      <fileset dir="${basedir}/WebContent">
+   	         <include name="**/*.html"/>
+   	      </fileset>
+   	   </war>
+   		<echo>war created successfully</echo>
+   	</target>
+
    
 </project>
