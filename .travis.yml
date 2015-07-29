@@ -8,3 +8,4 @@ deploy:
    api: https://api.run.pivotal.io
    organization: vz-hackathon-july
    space: development
+   path: /home/travis/build/nattanagaraju/vz-hackathon-july/vz-hackathon-july.war
