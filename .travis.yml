@@ -1,3 +1,10 @@
 language: java
 script: ant build-war
-build_success: cf push vz-hackathon-july -i 2 -m 512M -n vz-hackathon-july -p /home/travis/build/nattanagaraju/vz-hackathon-july/vz-hackathon-july.war
+deploy:
+   edge: true
+   provider: cloudfoundry
+   username: natta_nagaraju@yahoo.co.in
+   password: Z92cAoeE26fEFCub009AHF1ndsbCjtZNBqPLaQ8QdOs4lzPWsaZxexjUOL07G7BkvksK4HXCbUa6m5GW6GJiv0iXUIQTg+/rWO5YpVDabml1KGt/amldmVVtTUbcvEj4RLiG2tKKfCTHJglRXGGXZE+iB5iwhBSSOil5HD77YUD4yTMGsIm3yM9ygWvBmaP9/4jEAdfajXocuYgkOWK25kfsTicj8hzzWRJaS1AvDJTgH+tVMXyyPAtUUSlruK5gY3a3H/vatw7FR8jqcXSuY9geF1lyHLGyu2P5bwusf2EeeFwSIOEXctrUWKP5Dt/2i84vuK1OqQA7yV5ns9UsGl+lPHcA6ZLK1vhLft3CCq9ySTFa/d8gsQgx3dVMMXKSb+NvMtVTDFN7YBNUuI9Gzuh2mI/j3hhw0j15rnRt1F6oAsvZcc6kmY5e4L7TTRR4vMF69Mrb7gKef6vAMREoEmdDToCo2aQP5GaB/6JC8cQe6cud7FCPdU3BP+WqGOCyth3TO2Ww+BFXU9/sj9o4HEpxf+m9vG84D3JqhYpqSqSXS6JYLJWSFOF6/TfbnT1iKESnWPy758LqGUh3dRnssxT2p34MdlnJt/7QPf+toe0WfSFOB9YySenq200SdlnuM0+6kUXbjPFuCH8nWAAr0+rNTMPn/1uCRTna7nTY9BU=
+   api: https://api.run.pivotal.io
+   organization: vz-hackathon-july
+   space: development
