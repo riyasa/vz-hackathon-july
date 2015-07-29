@@ -8,7 +8,7 @@
    	<target name="build-war">
 
    	   <war destfile="fax.war" webxml="${basedir}/web.xml">
-   	      <fileset dir="${basedir}/WebContent">
+   	      <fileset dir="${basedir}">
    	         <include name="**/*.html"/>
    	      </fileset>
    	   </war>
