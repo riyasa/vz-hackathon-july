@@ -1,3 +1,10 @@
 language: java
 script: ant build-war
-after_success: ant test
+deploy:
+   edge: true
+   provider: cloudfoundry
+   username: kunaldutta08@gmail.com
+   password: Vz02two#
+   api: https://api.run.pivotal.io
+   organization: VzHackathonJuly15
+   space: development
