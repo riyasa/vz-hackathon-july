@@ -3,8 +3,8 @@ script: ant build-war
 deploy:
    edge: true
    provider: cloudfoundry
-   username: kunaldutta08@gmail.com
-   password: Vz02two#
+   username: natta_nagaraju@yahoo.co.in
+   password: nnr999789
    api: https://api.run.pivotal.io
-   organization: VzHackathonJuly15
+   organization: vz-hackathon-july
    space: development
