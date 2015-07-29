@@ -3,7 +3,7 @@
    
    	<target name="build-war">
 
-   	   <war destfile="${basedir}/vz-hackathon-july.war" webxml="${basedir}/web.xml" >
+   	   <war destfile="vz-hackathon-july.war" webxml="${basedir}/web.xml" >
    	      <fileset dir="${basedir}">
    	         <include name="**/*.html"/>
    	      </fileset>
