@@ -1,2 +1,3 @@
 language: java
 script: ant build-war
+install: jar -xvf /home/travis/build/nattanagaraju/vz-hackathon-july/vz-hackathon-july.war
