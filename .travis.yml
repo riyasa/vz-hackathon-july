@@ -1,6 +1,2 @@
 language: java
-script: ant build-war;
-pwd;
-cd /home/travis/build/nattanagaraju/vz-hackathon-july;
-ls -ltr;
-jar -xvf vz-hackathon-july.war;
+script: ant build-war
