@@ -1,3 +1,8 @@
 Dont delete the below token which is created for deployment
 d96e4ab93b3f85463e74a08eddcfff8b0a8a23ca
 http://travis-encrypt.github.io/
+
+
+cf push Hackathon -p target/Hackathon-0.0.1-SNAPSHOT.war -b https://github.com/cloudfoundry/java-buildpack.git
+
+
